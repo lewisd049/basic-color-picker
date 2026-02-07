@@ -2,6 +2,7 @@ body{
   font-family: Arial;
   width: 260px;
   padding: 10px;
+  border-radius: 5%;
 }
 
 button{
@@ -9,8 +10,8 @@ button{
   padding:6px;
   margin-bottom:6px;
   cursor:pointer;
-  border-radius: 25%;
-  border: 2px solid black;
+  border-radius: 5%;
+  border: 0px solid black;
 }
 
 #preview{
@@ -33,9 +34,4 @@ button{
   margin:3px;
   border:1px solid #000;
   cursor:pointer;
-}
-
-#saved{
-  border-radius: 25%;
-  border: 2px solid black;
 }
