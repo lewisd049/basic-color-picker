@@ -1,0 +1,34 @@
+body{
+  font-family: Arial;
+  width: 260px;
+  padding: 10px;
+}
+
+button{
+  width:100%;
+  padding:6px;
+  margin-bottom:6px;
+  cursor:pointer;
+}
+
+#preview{
+  width:100%;
+  height:40px;
+  border:1px solid #000;
+  margin-bottom:5px;
+}
+
+#values{
+  text-align:center;
+  font-size:14px;
+  margin-bottom:5px;
+}
+
+.swatch{
+  width:30px;
+  height:30px;
+  display:inline-block;
+  margin:3px;
+  border:1px solid #000;
+  cursor:pointer;
+}
