@@ -44,6 +44,8 @@ pickBtn.onclick = async ()=>{
   preview.style.background = color.hex;
   values.innerText = `${color.hex} | rgb(${color.r},${color.g},${color.b})`;
 
+  const clearSavedBtn = document.getElementById("clearSaved");
+
   chrome.storage.sync.get("recent", data=>{
     let recent = data.recent || [];
     recent.unshift(color);
@@ -56,6 +58,14 @@ pickBtn.onclick = async ()=>{
 // Save Color
 saveBtn.onclick = ()=>{
   if(!currentColor) return;
+
+  clearSavedBtn.onclick = ()=>{
+  if(!confirm("Delete all saved colors?")) return;
+
+  chrome.storage.sync.set({saved:[]}, ()=>{
+    render();
+  });
+};
 
   chrome.storage.sync.get("saved", data=>{
     let saved = data.saved || [];
