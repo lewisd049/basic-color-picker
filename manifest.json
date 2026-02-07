@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Simple Color Picker Saver",
+  "version": "1.0",
+  "description": "Pick colors, see HEX/RGB, save favorites, and view recent colors.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
